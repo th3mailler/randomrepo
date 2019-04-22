@@ -9,6 +9,12 @@ auto printStuff(string name, int age) {
 	return s;
 }
 int main() {
-	cout << printStuff("Willy Wonka", 17) << endl;
+	char name[30];
+	int age;
+	cout << "Enter name: ";
+	cin.getline(name, 30);
+	cout << "Enter age: ";
+	cin >> age;
+	cout << printStuff(name, age) << endl;
 	return 0;
 }
